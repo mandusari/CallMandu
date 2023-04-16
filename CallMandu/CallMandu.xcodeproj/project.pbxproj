@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		555B432429EBADB40090AB13 /* CallManduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B432329EBADB40090AB13 /* CallManduApp.swift */; };
+		555B432629EBADB40090AB13 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B432529EBADB40090AB13 /* MainView.swift */; };
+		555B432829EBADB60090AB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555B432729EBADB60090AB13 /* Assets.xcassets */; };
+		555B432B29EBADB60090AB13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555B432A29EBADB60090AB13 /* Preview Assets.xcassets */; };
+		555B432D29EBADB60090AB13 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B432C29EBADB60090AB13 /* Persistence.swift */; };
+		555B433029EBADB60090AB13 /* CallMandu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 555B432E29EBADB60090AB13 /* CallMandu.xcdatamodeld */; };
+		555B433B29EBADB60090AB13 /* CallManduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B433A29EBADB60090AB13 /* CallManduTests.swift */; };
+		555B434529EBADB60090AB13 /* CallManduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B434429EBADB60090AB13 /* CallManduUITests.swift */; };
+		555B434729EBADB60090AB13 /* CallManduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */; };
+		55D8098E29EBCB8000F58170 /* RecentlyCallListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8098D29EBCB8000F58170 /* RecentlyCallListCell.swift */; };
+		55D8099329EBE73400F58170 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099229EBE73400F58170 /* ContactListView.swift */; };
+		55D8099529EBE8AF00F58170 /* SerachBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099429EBE8AF00F58170 /* SerachBar.swift */; };
+		55D8099829EBEA0200F58170 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099729EBEA0200F58170 /* ContactListCell.swift */; };
+		55D8099A29EBED5F00F58170 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099929EBED5F00F58170 /* KeypadView.swift */; };
+		55D8099C29EBF34600F58170 /* NumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099B29EBF34600F58170 /* NumberInputView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		555B433729EBADB60090AB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 555B431829EBADB40090AB13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 555B431F29EBADB40090AB13;
+			remoteInfo = CallMandu;
+		};
+		555B434129EBADB60090AB13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 555B431829EBADB40090AB13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 555B431F29EBADB40090AB13;
+			remoteInfo = CallMandu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		555B432029EBADB40090AB13 /* CallMandu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallMandu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		555B432329EBADB40090AB13 /* CallManduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduApp.swift; sourceTree = "<group>"; };
+		555B432529EBADB40090AB13 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		555B432729EBADB60090AB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		555B432A29EBADB60090AB13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		555B432C29EBADB60090AB13 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		555B432F29EBADB60090AB13 /* CallMandu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallMandu.xcdatamodel; sourceTree = "<group>"; };
+		555B433129EBADB60090AB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555B433629EBADB60090AB13 /* CallManduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallManduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		555B433A29EBADB60090AB13 /* CallManduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduTests.swift; sourceTree = "<group>"; };
+		555B434029EBADB60090AB13 /* CallManduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallManduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		555B434429EBADB60090AB13 /* CallManduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduUITests.swift; sourceTree = "<group>"; };
+		555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55D8098D29EBCB8000F58170 /* RecentlyCallListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCallListCell.swift; sourceTree = "<group>"; };
+		55D8099229EBE73400F58170 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		55D8099429EBE8AF00F58170 /* SerachBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachBar.swift; sourceTree = "<group>"; };
+		55D8099729EBEA0200F58170 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
+		55D8099929EBED5F00F58170 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		55D8099B29EBF34600F58170 /* NumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInputView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		555B431D29EBADB40090AB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555B433329EBADB60090AB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555B433D29EBADB60090AB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		555B431729EBADB40090AB13 = {
+			isa = PBXGroup;
+			children = (
+				555B432229EBADB40090AB13 /* CallMandu */,
+				555B433929EBADB60090AB13 /* CallManduTests */,
+				555B434329EBADB60090AB13 /* CallManduUITests */,
+				555B432129EBADB40090AB13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		555B432129EBADB40090AB13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				555B432029EBADB40090AB13 /* CallMandu.app */,
+				555B433629EBADB60090AB13 /* CallManduTests.xctest */,
+				555B434029EBADB60090AB13 /* CallManduUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		555B432229EBADB40090AB13 /* CallMandu */ = {
+			isa = PBXGroup;
+			children = (
+				55D8099629EBE8B300F58170 /* CustomView */,
+				55D8099129EBE71A00F58170 /* Keypad */,
+				55D8099029EBE70400F58170 /* Contact */,
+				55D8098F29EBE6F600F58170 /* Recently */,
+				555B435329EBAE260090AB13 /* Main */,
+				555B432329EBADB40090AB13 /* CallManduApp.swift */,
+				555B432729EBADB60090AB13 /* Assets.xcassets */,
+				555B432C29EBADB60090AB13 /* Persistence.swift */,
+				555B433129EBADB60090AB13 /* Info.plist */,
+				555B432E29EBADB60090AB13 /* CallMandu.xcdatamodeld */,
+				555B432929EBADB60090AB13 /* Preview Content */,
+			);
+			path = CallMandu;
+			sourceTree = "<group>";
+		};
+		555B432929EBADB60090AB13 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				555B432A29EBADB60090AB13 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		555B433929EBADB60090AB13 /* CallManduTests */ = {
+			isa = PBXGroup;
+			children = (
+				555B433A29EBADB60090AB13 /* CallManduTests.swift */,
+			);
+			path = CallManduTests;
+			sourceTree = "<group>";
+		};
+		555B434329EBADB60090AB13 /* CallManduUITests */ = {
+			isa = PBXGroup;
+			children = (
+				555B434429EBADB60090AB13 /* CallManduUITests.swift */,
+				555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */,
+			);
+			path = CallManduUITests;
+			sourceTree = "<group>";
+		};
+		555B435329EBAE260090AB13 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				555B432529EBADB40090AB13 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		55D8098F29EBE6F600F58170 /* Recently */ = {
+			isa = PBXGroup;
+			children = (
+				55D8098D29EBCB8000F58170 /* RecentlyCallListCell.swift */,
+			);
+			path = Recently;
+			sourceTree = "<group>";
+		};
+		55D8099029EBE70400F58170 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				55D8099229EBE73400F58170 /* ContactListView.swift */,
+				55D8099729EBEA0200F58170 /* ContactListCell.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		55D8099129EBE71A00F58170 /* Keypad */ = {
+			isa = PBXGroup;
+			children = (
+				55D8099B29EBF34600F58170 /* NumberInputView.swift */,
+			);
+			path = Keypad;
+			sourceTree = "<group>";
+		};
+		55D8099629EBE8B300F58170 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				55D8099429EBE8AF00F58170 /* SerachBar.swift */,
+				55D8099929EBED5F00F58170 /* KeypadView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		555B431F29EBADB40090AB13 /* CallMandu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555B434A29EBADB60090AB13 /* Build configuration list for PBXNativeTarget "CallMandu" */;
+			buildPhases = (
+				555B431C29EBADB40090AB13 /* Sources */,
+				555B431D29EBADB40090AB13 /* Frameworks */,
+				555B431E29EBADB40090AB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallMandu;
+			productName = CallMandu;
+			productReference = 555B432029EBADB40090AB13 /* CallMandu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		555B433529EBADB60090AB13 /* CallManduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555B434D29EBADB60090AB13 /* Build configuration list for PBXNativeTarget "CallManduTests" */;
+			buildPhases = (
+				555B433229EBADB60090AB13 /* Sources */,
+				555B433329EBADB60090AB13 /* Frameworks */,
+				555B433429EBADB60090AB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				555B433829EBADB60090AB13 /* PBXTargetDependency */,
+			);
+			name = CallManduTests;
+			productName = CallManduTests;
+			productReference = 555B433629EBADB60090AB13 /* CallManduTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		555B433F29EBADB60090AB13 /* CallManduUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555B435029EBADB60090AB13 /* Build configuration list for PBXNativeTarget "CallManduUITests" */;
+			buildPhases = (
+				555B433C29EBADB60090AB13 /* Sources */,
+				555B433D29EBADB60090AB13 /* Frameworks */,
+				555B433E29EBADB60090AB13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				555B434229EBADB60090AB13 /* PBXTargetDependency */,
+			);
+			name = CallManduUITests;
+			productName = CallManduUITests;
+			productReference = 555B434029EBADB60090AB13 /* CallManduUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		555B431829EBADB40090AB13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					555B431F29EBADB40090AB13 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					555B433529EBADB60090AB13 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 555B431F29EBADB40090AB13;
+					};
+					555B433F29EBADB60090AB13 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 555B431F29EBADB40090AB13;
+					};
+				};
+			};
+			buildConfigurationList = 555B431B29EBADB40090AB13 /* Build configuration list for PBXProject "CallMandu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 555B431729EBADB40090AB13;
+			productRefGroup = 555B432129EBADB40090AB13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				555B431F29EBADB40090AB13 /* CallMandu */,
+				555B433529EBADB60090AB13 /* CallManduTests */,
+				555B433F29EBADB60090AB13 /* CallManduUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		555B431E29EBADB40090AB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555B432B29EBADB60090AB13 /* Preview Assets.xcassets in Resources */,
+				555B432829EBADB60090AB13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555B433429EBADB60090AB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555B433E29EBADB60090AB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		555B431C29EBADB40090AB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D8099829EBEA0200F58170 /* ContactListCell.swift in Sources */,
+				555B432D29EBADB60090AB13 /* Persistence.swift in Sources */,
+				55D8099A29EBED5F00F58170 /* KeypadView.swift in Sources */,
+				555B432629EBADB40090AB13 /* MainView.swift in Sources */,
+				55D8099529EBE8AF00F58170 /* SerachBar.swift in Sources */,
+				555B432429EBADB40090AB13 /* CallManduApp.swift in Sources */,
+				55D8099C29EBF34600F58170 /* NumberInputView.swift in Sources */,
+				55D8099329EBE73400F58170 /* ContactListView.swift in Sources */,
+				555B433029EBADB60090AB13 /* CallMandu.xcdatamodeld in Sources */,
+				55D8098E29EBCB8000F58170 /* RecentlyCallListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555B433229EBADB60090AB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555B433B29EBADB60090AB13 /* CallManduTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555B433C29EBADB60090AB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555B434729EBADB60090AB13 /* CallManduUITestsLaunchTests.swift in Sources */,
+				555B434529EBADB60090AB13 /* CallManduUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		555B433829EBADB60090AB13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 555B431F29EBADB40090AB13 /* CallMandu */;
+			targetProxy = 555B433729EBADB60090AB13 /* PBXContainerItemProxy */;
+		};
+		555B434229EBADB60090AB13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 555B431F29EBADB40090AB13 /* CallMandu */;
+			targetProxy = 555B434129EBADB60090AB13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		555B434829EBADB60090AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		555B434929EBADB60090AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		555B434B29EBADB60090AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CallMandu/Preview Content\"";
+				DEVELOPMENT_TEAM = 88DDPE2BJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "콜만두";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandusari.CallMandu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		555B434C29EBADB60090AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CallMandu/Preview Content\"";
+				DEVELOPMENT_TEAM = 88DDPE2BJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "콜만두";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandusari.CallMandu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		555B434E29EBADB60090AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88DDPE2BJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandusari.CallManduTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallMandu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CallMandu";
+			};
+			name = Debug;
+		};
+		555B434F29EBADB60090AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88DDPE2BJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandusari.CallManduTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallMandu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CallMandu";
+			};
+			name = Release;
+		};
+		555B435129EBADB60090AB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88DDPE2BJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandusari.CallManduUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CallMandu;
+			};
+			name = Debug;
+		};
+		555B435229EBADB60090AB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88DDPE2BJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandusari.CallManduUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CallMandu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		555B431B29EBADB40090AB13 /* Build configuration list for PBXProject "CallMandu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555B434829EBADB60090AB13 /* Debug */,
+				555B434929EBADB60090AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555B434A29EBADB60090AB13 /* Build configuration list for PBXNativeTarget "CallMandu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555B434B29EBADB60090AB13 /* Debug */,
+				555B434C29EBADB60090AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555B434D29EBADB60090AB13 /* Build configuration list for PBXNativeTarget "CallManduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555B434E29EBADB60090AB13 /* Debug */,
+				555B434F29EBADB60090AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555B435029EBADB60090AB13 /* Build configuration list for PBXNativeTarget "CallManduUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555B435129EBADB60090AB13 /* Debug */,
+				555B435229EBADB60090AB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		555B432E29EBADB60090AB13 /* CallMandu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				555B432F29EBADB60090AB13 /* CallMandu.xcdatamodel */,
+			);
+			currentVersion = 555B432F29EBADB60090AB13 /* CallMandu.xcdatamodel */;
+			path = CallMandu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 555B431829EBADB40090AB13 /* Project object */;
+}
