@@ -12,7 +12,8 @@ struct RecentlyCallListCell: View {
     
     @State var isSent = false
     @State var isIncoming = false
-
+    var data: RecentlyCallDatable
+    
     var body: some View {
         HStack(alignment: .center){
             if isSent {
@@ -31,9 +32,9 @@ struct RecentlyCallListCell: View {
             }
             
             VStack(alignment: .leading) {
-                Text("010-3327-9731")
+                Text(data.phoneNumber)
                     .font(.system(size: 20,weight: .bold))
-                Text("휴대전화")
+                Text(data.phoneType)
                     .font(.system(size: 13))
                     .foregroundColor(Color.gray)
             }
@@ -60,7 +61,7 @@ struct RecentlyCallListCell: View {
 
 struct MainListCell_Previews: PreviewProvider {
     static var previews: some View {
-        RecentlyCallListCell().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        RecentlyCallListCell(data: RecentlyCallDatable(type: .incoming, name: "", phoneType: "", phoneNumber: "")).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
             .frame(width: UIScreen.main.bounds.width, height: 35)
     }
 }

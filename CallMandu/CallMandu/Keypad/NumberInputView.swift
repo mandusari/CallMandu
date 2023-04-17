@@ -15,6 +15,7 @@ struct NumberInputView: View {
         VStack {
             TextField("", text: $inputText)
                 .padding(EdgeInsets(top: 0, leading: 50, bottom: 50, trailing: 50))
+                .disabled(true)
             KeypadView(inputText: $inputText)
         }
         

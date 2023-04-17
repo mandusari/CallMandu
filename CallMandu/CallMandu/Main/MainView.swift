@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import ContactsUI
 
 struct MainView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -15,24 +16,7 @@ struct MainView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-    @State private var selectedTab = 1
-    @State var phoneNumber: [String] = [
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",
-    "010-3327-9431",]
+    @State private var selectedTab = 2
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -46,13 +30,11 @@ struct MainView: View {
                 Text("즐겨찾기")
                     .foregroundColor(.gray)
             }
+            .tag(0)
             
             NavigationView {
-                List(phoneNumber, id:\.self) { item in
-                    RecentlyCallListCell()
-                }
-                .navigationTitle("최근 통화")
-                
+                RecentlyCallList()
+                    .navigationTitle("최근 통화")
             }
             .tabItem{
                 Image(systemName: "clock.fill")
@@ -60,6 +42,7 @@ struct MainView: View {
                 Text("최근 통화")
                     .foregroundColor(.gray)
             }
+            .tag(1)
 
             
             NavigationView {
@@ -72,10 +55,10 @@ struct MainView: View {
                 Text("연락처")
                     .foregroundColor(.gray)
             }
+            .tag(2)
 
             NavigationView {
-                Text("키패드")
-                    .navigationTitle("키패드")
+                NumberInputView()
             }
             .tabItem{
                 Image(systemName: "circle.grid.3x3.fill")
@@ -83,8 +66,7 @@ struct MainView: View {
                 Text("키패드")
                     .foregroundColor(.gray)
             }
-
-            
+            .tag(3)
         }
     }
 

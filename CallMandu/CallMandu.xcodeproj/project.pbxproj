@@ -16,12 +16,18 @@
 		555B433B29EBADB60090AB13 /* CallManduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B433A29EBADB60090AB13 /* CallManduTests.swift */; };
 		555B434529EBADB60090AB13 /* CallManduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B434429EBADB60090AB13 /* CallManduUITests.swift */; };
 		555B434729EBADB60090AB13 /* CallManduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */; };
+		55B2D2F629EC880900B8D9CC /* RecentlyCallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D2F529EC880900B8D9CC /* RecentlyCallList.swift */; };
+		55B2D2F829EC892900B8D9CC /* RecentlyCallDatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D2F729EC892900B8D9CC /* RecentlyCallDatable.swift */; };
+		55B7940329ED0C3A00B0F078 /* ContactDatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7940229ED0C3A00B0F078 /* ContactDatable.swift */; };
+		55B7940529ED0CDD00B0F078 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7940429ED0CDD00B0F078 /* ContactViewModel.swift */; };
+		55B7940829ED7DD600B0F078 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7940729ED7DD600B0F078 /* ContactDetailView.swift */; };
 		55D8098E29EBCB8000F58170 /* RecentlyCallListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8098D29EBCB8000F58170 /* RecentlyCallListCell.swift */; };
 		55D8099329EBE73400F58170 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099229EBE73400F58170 /* ContactListView.swift */; };
 		55D8099529EBE8AF00F58170 /* SerachBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099429EBE8AF00F58170 /* SerachBar.swift */; };
 		55D8099829EBEA0200F58170 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099729EBEA0200F58170 /* ContactListCell.swift */; };
 		55D8099A29EBED5F00F58170 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099929EBED5F00F58170 /* KeypadView.swift */; };
 		55D8099C29EBF34600F58170 /* NumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099B29EBF34600F58170 /* NumberInputView.swift */; };
+		55D8099F29EC3F7C00F58170 /* ContactsFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8099E29EC3F7C00F58170 /* ContactsFetch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +61,18 @@
 		555B434029EBADB60090AB13 /* CallManduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallManduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555B434429EBADB60090AB13 /* CallManduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduUITests.swift; sourceTree = "<group>"; };
 		555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55B2D2F529EC880900B8D9CC /* RecentlyCallList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCallList.swift; sourceTree = "<group>"; };
+		55B2D2F729EC892900B8D9CC /* RecentlyCallDatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCallDatable.swift; sourceTree = "<group>"; };
+		55B7940229ED0C3A00B0F078 /* ContactDatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDatable.swift; sourceTree = "<group>"; };
+		55B7940429ED0CDD00B0F078 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		55B7940729ED7DD600B0F078 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		55D8098D29EBCB8000F58170 /* RecentlyCallListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCallListCell.swift; sourceTree = "<group>"; };
 		55D8099229EBE73400F58170 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		55D8099429EBE8AF00F58170 /* SerachBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachBar.swift; sourceTree = "<group>"; };
 		55D8099729EBEA0200F58170 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
 		55D8099929EBED5F00F58170 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
 		55D8099B29EBF34600F58170 /* NumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInputView.swift; sourceTree = "<group>"; };
+		55D8099E29EC3F7C00F58170 /* ContactsFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFetch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 		555B432229EBADB40090AB13 /* CallMandu */ = {
 			isa = PBXGroup;
 			children = (
+				55D8099D29EC3F5E00F58170 /* Services */,
 				55D8099629EBE8B300F58170 /* CustomView */,
 				55D8099129EBE71A00F58170 /* Keypad */,
 				55D8099029EBE70400F58170 /* Contact */,
@@ -159,10 +172,20 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		55B7940629ED7DC800B0F078 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				55B7940729ED7DD600B0F078 /* ContactDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		55D8098F29EBE6F600F58170 /* Recently */ = {
 			isa = PBXGroup;
 			children = (
 				55D8098D29EBCB8000F58170 /* RecentlyCallListCell.swift */,
+				55B2D2F529EC880900B8D9CC /* RecentlyCallList.swift */,
+				55B2D2F729EC892900B8D9CC /* RecentlyCallDatable.swift */,
 			);
 			path = Recently;
 			sourceTree = "<group>";
@@ -170,8 +193,11 @@
 		55D8099029EBE70400F58170 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				55B7940629ED7DC800B0F078 /* Detail */,
 				55D8099229EBE73400F58170 /* ContactListView.swift */,
 				55D8099729EBEA0200F58170 /* ContactListCell.swift */,
+				55B7940229ED0C3A00B0F078 /* ContactDatable.swift */,
+				55B7940429ED0CDD00B0F078 /* ContactViewModel.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -191,6 +217,14 @@
 				55D8099929EBED5F00F58170 /* KeypadView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		55D8099D29EC3F5E00F58170 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55D8099E29EC3F7C00F58170 /* ContactsFetch.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,11 +360,17 @@
 				55D8099829EBEA0200F58170 /* ContactListCell.swift in Sources */,
 				555B432D29EBADB60090AB13 /* Persistence.swift in Sources */,
 				55D8099A29EBED5F00F58170 /* KeypadView.swift in Sources */,
+				55B2D2F629EC880900B8D9CC /* RecentlyCallList.swift in Sources */,
 				555B432629EBADB40090AB13 /* MainView.swift in Sources */,
+				55B7940529ED0CDD00B0F078 /* ContactViewModel.swift in Sources */,
 				55D8099529EBE8AF00F58170 /* SerachBar.swift in Sources */,
 				555B432429EBADB40090AB13 /* CallManduApp.swift in Sources */,
+				55D8099F29EC3F7C00F58170 /* ContactsFetch.swift in Sources */,
 				55D8099C29EBF34600F58170 /* NumberInputView.swift in Sources */,
+				55B7940329ED0C3A00B0F078 /* ContactDatable.swift in Sources */,
 				55D8099329EBE73400F58170 /* ContactListView.swift in Sources */,
+				55B7940829ED7DD600B0F078 /* ContactDetailView.swift in Sources */,
+				55B2D2F829EC892900B8D9CC /* RecentlyCallDatable.swift in Sources */,
 				555B433029EBADB60090AB13 /* CallMandu.xcdatamodeld in Sources */,
 				55D8098E29EBCB8000F58170 /* RecentlyCallListCell.swift in Sources */,
 			);
@@ -494,8 +534,10 @@
 				DEVELOPMENT_TEAM = 88DDPE2BJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallMandu/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "콜만두";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSContactsUsageDescription = "이 앱은 연락처에 액세스하여 연락처를 편집하고 가져올 수 있습니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -529,8 +571,10 @@
 				DEVELOPMENT_TEAM = 88DDPE2BJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallMandu/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "콜만두";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSContactsUsageDescription = "이 앱은 연락처에 액세스하여 연락처를 편집하고 가져올 수 있습니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

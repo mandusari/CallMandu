@@ -107,7 +107,7 @@ struct KeypadView: View {
                 }
                 Spacer()
                 Button {
-                    inputText = inputText + "#"
+                    inputText.removeLast()
                 } label: {
                     Image(systemName: "delete.left")
                         .resizable()
