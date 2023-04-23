@@ -16,7 +16,7 @@ class ContactViewModel: ObservableObject {
         DispatchQueue.global(qos: .background).async { [weak self] in
             guard let self = self else { return }
             let store = CNContactStore()
-            let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey, CNContactDatesKey, CNContactTypeKey] as [CNKeyDescriptor]
+            let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey, CNContactJobTitleKey, CNContactDatesKey, CNContactTypeKey] as [CNKeyDescriptor]
             let request = CNContactFetchRequest(keysToFetch: keysToFetch)
             
             do {
@@ -26,6 +26,7 @@ class ContactViewModel: ObservableObject {
                             ContactDatable(
                                 familyName: contact.familyName,
                                 givenName: contact.givenName,
+                                jobTitle: contact.jobTitle,
                                 phoneNumber: contact.phoneNumbers.map({ $0.value.stringValue })
                             ))
                     }

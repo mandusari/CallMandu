@@ -30,15 +30,18 @@ struct ContactListView: View {
             if searchText.isEmpty == false {
                 let filteredData = vm.data.filter { data in
                     let fullName = data.givenName + data.familyName
-                    return true
-//                    return findContact(input: searchText, data: fullName)
+                    let text = searchText.trimmingCharacters(in: .whitespaces)
+                    let isChosungCheck = isChosung(word: text)
+                    return (fullName.contains(text) || chosungCheck(word: fullName).contains(text))
                 }
                 List(filteredData, id:\.self) { data in
                     ContactListCell(data: data)
                         .listRowSeparator(.hidden)
-                        .onTapGesture {
-                            debugPrint(data.givenName)
-                        }
+                        .background(
+                            NavigationLink(destination: ContactDetailView(data: data), label: {EmptyView()})
+                                .buttonStyle(.plain)
+                        )
+                    
                 }
                 .listStyle(.plain)
             } else {
@@ -46,7 +49,7 @@ struct ContactListView: View {
                     ContactListCell(data: data)
                         .listRowSeparator(.hidden)
                         .background(
-                            NavigationLink(destination: ContactDetailView(), label: {EmptyView()})
+                            NavigationLink(destination: ContactDetailView(data: data), label: {EmptyView()})
                                 .buttonStyle(.plain)
                         )
                 }
@@ -58,43 +61,32 @@ struct ContactListView: View {
         })
     }
     
-//    private func findContact(input: String, data: String) -> Bool {
-//        let initialSound = makeInitialSound(input)
-//        let regexPattern = ".*\(initialSound).*"
-//        let regex = try? NSRegularExpression(pattern: regexPattern, options: .caseInsensitive)
-//        let range = NSRange(location: 0, length: data.utf16.count)
-//        return regex?.firstMatch(in: data, options: [], range: range) != nil
-//    }
-//
-//    private func makeInitialSound(_ input: String) -> NSRegularExpression? {
-//        let pattern = input.reduce("") { (result, char) -> String in
-//            let (cho, _, _) = separateKoreanChar(char)
-//            guard let cho = cho else {
-//                return result + String(char)
-//            }
-//
-//            return result + cho
-//        }
-//
-//        return try? NSRegularExpression(pattern: pattern, options: .caseInsensitive)
-//    }
+    let hangeul = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"]
+    func chosungCheck(word: String) -> String {
+        var result = ""
+        
+        for char in word {
+            let octal = char.unicodeScalars[char.unicodeScalars.startIndex].value
+            if 44032...55203 ~= octal {
+                let index = (octal - 0xac00) / 28 / 21
+                result = result + hangeul[Int(index)]
+            }
+        }
+        return result
+    }
 
-//    private func separateKoreanChar(_ char: Character) -> (cho: String?, jung: String?, jong: String?) {
-//        guard let scalar = char.unicodeScalars.first, scalar.isHangul else {
-//            return (nil, nil, nil)
-//        }
-//
-//        let firstValue = scalar.value - 0xac00
-//        let jong = Int(firstValue % 28)
-//        let jung = Int((Int(firstValue) - jong) / 28 % 21)
-//        let cho = Int(((firstValue - jong) / 28 - jung) / 21)
-//
-//        let choChar = cho > 0 ? String(UnicodeScalar(cho + 0x1100)!) : nil
-//        let jungChar = String(UnicodeScalar(jung + 0x1161)!)
-//        let jongChar = jong > 0 ? String(UnicodeScalar(jong + 0x11a7)!) : nil
-//
-//        return (choChar, jungChar, jongChar)
-//    }
+    func isChosung(word: String) -> Bool {
+        var isChosung = false
+        for char in word {
+            if 0 < hangeul.filter({ $0.contains(char)}).count {
+                isChosung = true
+            } else {
+                isChosung = false
+                break
+            }
+        }
+        return isChosung
+    }
 }
 
 struct ContactListView_Previews: PreviewProvider {
