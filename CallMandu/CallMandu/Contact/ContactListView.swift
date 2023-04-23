@@ -31,34 +31,32 @@ struct ContactListView: View {
                 let filteredData = vm.data.filter { data in
                     let fullName = data.givenName + data.familyName
                     let text = searchText.trimmingCharacters(in: .whitespaces)
-                    let isChosungCheck = isChosung(word: text)
                     return (fullName.contains(text) || chosungCheck(word: fullName).contains(text))
                 }
-                List(filteredData, id:\.self) { data in
-                    ContactListCell(data: data)
-                        .listRowSeparator(.hidden)
-                        .background(
-                            NavigationLink(destination: ContactDetailView(data: data), label: {EmptyView()})
-                                .buttonStyle(.plain)
-                        )
-                    
-                }
-                .listStyle(.plain)
+                
+                create(listData: filteredData)
             } else {
-                List(vm.data, id:\.self) { data in
-                    ContactListCell(data: data)
-                        .listRowSeparator(.hidden)
-                        .background(
-                            NavigationLink(destination: ContactDetailView(data: data), label: {EmptyView()})
-                                .buttonStyle(.plain)
-                        )
-                }
-                .listStyle(.plain)
+                create(listData: vm.data)
             }
         }
         .onAppear(perform: {
             vm.fetchContract()
         })
+    }
+    
+    private func create(listData: [ContactDatable]) -> some View {
+        return List(listData, id:\.self) { data in
+            ContactListCell(data: data)
+                .listRowSeparator(.hidden)
+                .background(
+                    NavigationLink(destination: ContactDetailView(data: data), label: {EmptyView()})
+                        .buttonStyle(.plain)
+                )
+        }
+        .listStyle(.plain)
+        .gesture(DragGesture().onChanged({ _ in
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }))
     }
     
     let hangeul = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"]
@@ -75,6 +73,7 @@ struct ContactListView: View {
         return result
     }
 
+    /// 검색어에 한글 초성 말고, 전화번호나 이메일 검색도 추가하고 싶을경우 쓸지도..
     func isChosung(word: String) -> Bool {
         var isChosung = false
         for char in word {

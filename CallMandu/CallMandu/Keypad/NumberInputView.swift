@@ -16,6 +16,7 @@ struct NumberInputView: View {
             TextField("", text: $inputText)
                 .padding(EdgeInsets(top: 0, leading: 50, bottom: 50, trailing: 50))
                 .disabled(true)
+                .font(Font.system(size: 40))
             KeypadView(inputText: $inputText)
         }
         
