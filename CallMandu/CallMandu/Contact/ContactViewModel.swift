@@ -18,6 +18,7 @@ class ContactViewModel: ObservableObject {
             let store = CNContactStore()
             let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey, CNContactJobTitleKey, CNContactDatesKey, CNContactTypeKey] as [CNKeyDescriptor]
             let request = CNContactFetchRequest(keysToFetch: keysToFetch)
+            request.sortOrder = .givenName
             
             do {
                 try store.enumerateContacts(with: request) { contact, stop in
