@@ -7,99 +7,47 @@
 
 import SwiftUI
 
+let KeySpacing: CGFloat = 20
+let KeySize: CGFloat = 70
+
 struct KeypadView: View {
-    
+
     @Binding var inputText: String
 
     var body: some View {
         HStack(alignment:.top) {
-            VStack(spacing:20) {
-                Button {
-                    inputText = inputText + "1"
-                } label: {
-                    keypadImage(imgName: "1.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "4"
-                } label: {
-                    keypadImage(imgName: "4.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "7"
-                } label: {
-                    keypadImage(imgName: "7.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "*"
-                } label: {
-                    keypadImage(imgName: "staroflife.circle", size: 70)
-                }
+            VStack(spacing:KeySpacing) {
+                keyButton(key: "1", imageName: "1.circle")
+                keyButton(key: "4", imageName: "4.circle")
+                keyButton(key: "7", imageName: "7.circle")
+                keyButton(key: "*", imageName: "staroflife.circle")
             }
-            
             Spacer()
             
-            VStack(spacing:20) {
-                Button {
-                    inputText = inputText + "2"
-                } label: {
-                    keypadImage(imgName: "2.circle", size: 70)
-                }
+            VStack(spacing:KeySpacing) {
+                keyButton(key: "2", imageName: "2.circle")
+                keyButton(key: "5", imageName: "5.circle")
+                keyButton(key: "8", imageName: "8.circle")
+                keyButton(key: "0", imageName: "0.circle")
 
                 Button {
-                    inputText = inputText + "5"
+                    let telephone = "tel://"
+                    let formattedString = telephone + inputText
+                    guard let url = URL(string: formattedString) else { return }
+                    UIApplication.shared.open(url)
                 } label: {
-                    keypadImage(imgName: "5.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "8"
-                } label: {
-                    keypadImage(imgName: "8.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "0"
-                } label: {
-                    keypadImage(imgName: "0.circle", size: 70)
-                }
-
-                Button {
-                    // TODO: 전화 고~~
-                } label: {
-                    keypadImage(imgName: "phone.circle.fill", size: 70)
+                    keypadImage(imgName: "phone.circle.fill", size: KeySize)
                         .foregroundColor(.green)
                 }
             }
             
             Spacer()
 
-            VStack(spacing:20) {
-                Button {
-                    inputText = inputText + "3"
-                } label: {
-                    keypadImage(imgName: "3.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "6"
-                } label: {
-                    keypadImage(imgName: "6.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "9"
-                } label: {
-                    keypadImage(imgName: "9.circle", size: 70)
-                }
-
-                Button {
-                    inputText = inputText + "#"
-                } label: {
-                    keypadImage(imgName: "number.circle", size: 70)
-                }
+            VStack(spacing:KeySpacing) {
+                keyButton(key: "3", imageName: "3.circle")
+                keyButton(key: "6", imageName: "6.circle")
+                keyButton(key: "9", imageName: "9.circle")
+                keyButton(key: "#", imageName: "number.circle")
 
                 if inputText.isEmpty == false {
                     ZStack {
@@ -112,18 +60,25 @@ struct KeypadView: View {
                                 .frame(width: 40, height: 40)
                         }
                     }
-                    .frame(width: 70, height: 70)
+                    .frame(width: KeySize, height: KeySize)
                 }
             }
         }
         .padding(EdgeInsets(top: 0, leading: 50, bottom: 0, trailing: 50))
     }
     
+    private func keyButton(key: String, imageName: String, size: CGFloat = KeySize) -> some View {
+        return Button {
+            inputText = inputText + key
+        } label: {
+            keypadImage(imgName: imageName, size: size)
+        }
+    }
+    
     private func keypadImage(imgName: String, size: CGFloat) -> some View {
         return Image(systemName: imgName)
             .resizable()
             .frame(width: size, height: size)
-
     }
 }
 

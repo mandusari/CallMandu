@@ -16,7 +16,7 @@
 		555B433B29EBADB60090AB13 /* CallManduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B433A29EBADB60090AB13 /* CallManduTests.swift */; };
 		555B434529EBADB60090AB13 /* CallManduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B434429EBADB60090AB13 /* CallManduUITests.swift */; };
 		555B434729EBADB60090AB13 /* CallManduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */; };
-		55B123F929F55328005BD284 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B123F829F55328005BD284 /* Color+Extension.swift */; };
+		55B123F929F55328005BD284 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B123F829F55328005BD284 /* Color.swift */; };
 		55B2D2F629EC880900B8D9CC /* RecentlyCallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D2F529EC880900B8D9CC /* RecentlyCallList.swift */; };
 		55B2D2F829EC892900B8D9CC /* RecentlyCallDatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D2F729EC892900B8D9CC /* RecentlyCallDatable.swift */; };
 		55B7940329ED0C3A00B0F078 /* ContactDatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7940229ED0C3A00B0F078 /* ContactDatable.swift */; };
@@ -62,7 +62,7 @@
 		555B434029EBADB60090AB13 /* CallManduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallManduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555B434429EBADB60090AB13 /* CallManduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduUITests.swift; sourceTree = "<group>"; };
 		555B434629EBADB60090AB13 /* CallManduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManduUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		55B123F829F55328005BD284 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		55B123F829F55328005BD284 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		55B2D2F529EC880900B8D9CC /* RecentlyCallList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCallList.swift; sourceTree = "<group>"; };
 		55B2D2F729EC892900B8D9CC /* RecentlyCallDatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCallDatable.swift; sourceTree = "<group>"; };
 		55B7940229ED0C3A00B0F078 /* ContactDatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDatable.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		55B123F729F55316005BD284 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				55B123F829F55328005BD284 /* Color+Extension.swift */,
+				55B123F829F55328005BD284 /* Color.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,7 +375,7 @@
 				555B432629EBADB40090AB13 /* MainView.swift in Sources */,
 				55B7940529ED0CDD00B0F078 /* ContactViewModel.swift in Sources */,
 				55D8099529EBE8AF00F58170 /* SerachBar.swift in Sources */,
-				55B123F929F55328005BD284 /* Color+Extension.swift in Sources */,
+				55B123F929F55328005BD284 /* Color.swift in Sources */,
 				555B432429EBADB40090AB13 /* CallManduApp.swift in Sources */,
 				55D8099F29EC3F7C00F58170 /* ContactsFetch.swift in Sources */,
 				55D8099C29EBF34600F58170 /* NumberInputView.swift in Sources */,
